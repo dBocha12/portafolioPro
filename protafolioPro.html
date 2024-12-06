@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Daniel Bolanos" />
+    <meta
+      name="description"
+      content="Portafolio de Daniel Bolanos"
+    />
+    <meta name="keywords" content="HTML, CSS, Javascript, React, Developer" />
+    <!-- bootstrap para el diseño -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- enlace para archivo css -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- fuente personalizada para los textos -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap" rel="stylesheet">
+
+    <!-- título del sitio -->
+    <title>Portafolio - Daniel</title>
+    <link rel="icon" href="./imagenes/iconoD.png" />
+  </head>
+  <body>
+    <!-- menú principal con diseño responsivo -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <!-- botón de menú para pantallas pequeñas -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-toggler"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- contenido que se oculta o muestra según el tamaño -->
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./imagenes/iconoD.png"
+              width="80"
+              alt="Logo de mi empresa"
+            />
+          </a>
+
+          <ul
+            class="navbar-nav d-flex justify-content-center align-items-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >about me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-disabled="true" href="#">testimonios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-disabled="true" href="#">contactos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- sección principal con una presentación -->
+     <section class="hero align-items-stretch">
+        <div class="hero-principal d-flex flex-column justify-content-between align-items-center">
+          <img class="hero-imagen-desarrollador"  src="./imagenes/programador.jpg" alt="Programador estilo cartoon">
+          <h1>Daniel Bolanos Chaves</h1>
+          <h2>Paginas web que se ajustan a tu bolsillo</h2>
+        </div>
+        <div class = "hero-inferior">
+          <img class= "hero-inferior-imagen img-fluid"  src="./imagenes/mainFoto.jpg" alt="Pagina programa con frontEnd technologies">
+        </div>
+     </section>
+    
+     <!-- sección de presentación sobre el desarrollador -->
+      <section id = "sobre-mi" class = "sobre-mi seccion-oscura">
+        <div class = "contenedor">
+          <h2 class = "seccion-titulo">Quien soy?</h2>
+          <p class = "seccion-texto">Soy un programador frontEnd orientado a companias iniciales que requieren de una pagina funcional que se ajuste a cualquier bolsillo.</p>
+        </div>
+      </section>
+
+      
+
+<!-- área de experiencia -->
+<section class="experiencia seccion-clara">
+  <div class="container text-center">
+    <div class="row">
+      <!-- sección para desarrollo web -->
+      <div class="columna col-12 col-md-4">
+        <i class="bi bi-laptop"></i>
+        <p class="experiencia-titulo">Desarrollo web</p>
+        <p>Creamos sitios modernos, rápidos y responsivos que se adaptan a cualquier dispositivo, ayudándote a destacar en el mundo digital.</p>
+        <div class="badge-contenedor">
+          <span class="badge text-bg-primary">HTML5</span>
+          <span class="badge text-bg-primary">CSS3</span>
+          <span class="badge text-bg-primary">JS6</span>
+          <span class="badge text-bg-primary">React</span>
+        </div>
+      </div>
+
+      <!-- sección para mantenimiento de páginas web -->
+      <div class="columna col-12 col-md-4">
+        <i class="bi bi-wrench"></i>
+        <p class="experiencia-titulo">Mantenimiento de páginas web</p>
+        <p>Optimización, actualizaciones y soporte continuo para que tu página siempre esté segura, rápida y en su mejor versión.</p>
+        <div class="badge-contenedor">
+          <span class="badge text-bg-primary">WordPress</span>
+          <span class="badge text-bg-primary">SEO</span>
+          <span class="badge text-bg-primary">Seguridad</span>
+          <span class="badge text-bg-primary">Rendimiento</span>
+        </div>
+      </div>
+
+      <!-- sección que describe la formación del autor -->
+      <div class="columna col-12 col-md-4">
+        <i class="bi bi-person-badge"></i>
+        <p class="experiencia-titulo">Mis estudios</p>
+        <p>Formación en tecnologías web de última generación y experiencia práctica en proyectos reales para asegurar soluciones efectivas.</p>
+        <div class="badge-contenedor">
+          <span class="badge text-bg-primary">HTML5</span>
+          <span class="badge text-bg-primary">CSS3</span>
+          <span class="badge text-bg-primary">JS6</span>
+          <span class="badge text-bg-primary">Python</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Galería de proyectos -->
+<section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+  <div class="container text-center proyectos-contenedor">
+    <h2 class="seccion-titulo text-negro">Trabajos recientes</h2>
+    <h3 class="seccion-descripcion">Estos son mis trabajos más recientes</h3>
+
+    <div class="row">
+      <!-- Proyecto 1 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="proyecto">
+          <img src="imagenes/proyecto1.png" alt="Imagen de mi proyecto #1" class="img-fluid">
+          <div class="overlay">
+            <a href="https://github.com">
+              <p>Proyecto #1</p>
+              <div class="iconos-contenedor">
+                <i class="bi bi-github"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 2 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="proyecto">
+          <img src="imagenes/proyecto2.png" alt="Imagen de mi proyecto #2" class="img-fluid">
+          <div class="overlay">
+            <a href="https://github.com">
+              <p>Proyecto #2</p>
+              <div class="iconos-contenedor">
+                <i class="bi bi-github"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 3 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="proyecto">
+          <img src="imagenes/proyecto3.png" alt="Imagen de mi proyecto #3" class="img-fluid">
+          <div class="overlay">
+            <a href="https://github.com">
+              <p>Proyecto #3</p>
+              <div class="iconos-contenedor">
+                <i class="bi bi-github"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 4 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="proyecto">
+          <img src="imagenes/proyecto4.png" alt="Imagen de mi proyecto #4" class="img-fluid">
+          <div class="overlay">
+            <a href="https://github.com">
+              <p>Proyecto #4</p>
+              <div class="iconos-contenedor">
+                <i class="bi bi-github"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 5 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="proyecto">
+          <img src="imagenes/proyecto5.png" alt="Imagen de mi proyecto #5" class="img-fluid">
+          <div class="overlay">
+            <a href="https://github.com">
+              <p>Proyecto #5</p>
+              <div class="iconos-contenedor">
+                <i class="bi bi-github"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proyecto 6 -->
+      <div class="col-12 col-md-6 col-lg-4 mb-4">
+        <div class="proyecto">
+          <img src="imagenes/proyecto6.png" alt="Imagen de mi proyecto #6" class="img-fluid">
+          <div class="overlay">
+            <a href="https://github.com">
+              <p>Proyecto #6</p>
+              <div class="iconos-contenedor">
+                <i class="bi bi-github"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+       <!-- espacio para testimonios de los clientes -->
+       <section class="testimonios seccion-clara">
+        <h2 class="seccion-titulo">Mis clientes dicen:</h2>
+        <!-- Carrusel de opiniones -->
+        <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <img class="testimonio-imagen rounded-circle" src="./imagenes/laura.webp" alt="Foto de Juanca">
+                <p class="testimonio-texto">Daniel creó un sitio moderno y funcional para Innovatech Solutions. ¡Superó nuestras expectativas!.</p>
+                <div class="testimonio-info">
+                  <p class="cliente">Laura Martínez</p>
+                  <p class="cargo">Innovatech Solutions</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <img class="testimonio-imagen rounded-circle" src="./imagenes/cliente2.svg" alt="Foto de Juanca">
+                <p class="testimonio-texto">Daniel creó un sitio moderno y funcional para Innovatech Solutions. ¡Superó nuestras expectativas!.</p>
+                <div class="testimonio-info">
+                  <p class="cliente">Ramon</p>
+                  <p class="cargo">Gerente Bar Mercadito</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <img class="testimonio-imagen rounded-circle" src="./imagenes/cliente3.svg" alt="Foto de Juanca">
+                <p class="testimonio-texto">Daniel creó un sitio moderno y funcional para Innovatech Solutions. ¡Superó nuestras expectativas!.</p>
+                <div class="testimonio-info">
+                  <p class="cliente">Maria</p>
+                  <p class="cargo">Gerente de IT Softechie</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel"
+           data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel"
+           data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+      
+<!-- Contacto -->
+
+      <section id="contacto" class="contacto seccion-oscura">
+        <div class="container">
+          <div class="container text-center rectangulo d-flex justify-content-evenly">
+            <div class="row">
+              <div class="col-12 col-md-4 seccion-titulo">
+                Hablemos !
+              </div>
+              <div class="col-12 col-md-4 descripcion">
+                Contactame para comenzar hoy mismo tu proxima gran pagina.
+              </div>
+              <div class="col-12 col-md-4">
+                <a href="mailto:danielboc88@gmail.com">
+                  <button type="button">
+                    Contacto
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+
+      <section id="footer" class="seccion-oscura">
+        <div class="container footer-texto">
+          <i class="bi bi-code icono-grande"></i>
+          <p>Aprendo y creo todo los dias.</p>
+          <p>Creemos un proyecto juntos.</p>
+        </div>
+        <div class="iconos">
+          <a href="https://twitter.com/" target="_blank" rel="">
+            <i class="bi bi-twitter borde-icono"></i>
+          </a>
+          <a href="https://github.com/" target="_blank" rel="">
+            <i class="bi bi-github borde-icono"></i>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="">
+            <i class="bi bi-linkedin borde-icono"></i>
+          </a>
+          <a href="https://instagram.com/" target="_blank" rel="">
+            <i class="bi bi-instagram borde-icono"></i>
+          </a>
+          <a href="mailto:danielboc88@gmail.com" target="_blank" rel="">
+            <i class="bi bi-envelope borde-icono"></i>
+          </a>
+        </div>
+        <div class="copy">
+          Creado por Daniel (2024)  ©
+        </div>
+      </section>
+
+  </body>
+</html>
+

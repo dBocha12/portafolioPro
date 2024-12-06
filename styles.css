@@ -1,0 +1,403 @@
+/* ==================  generales=================== */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: 'Ga Maamli', Arial;
+    color: white;
+}
+
+.seccion-oscura {
+    color: white;
+    background-color: #800020;
+}
+
+.seccion-clara {
+    color: white;
+    background-color: #1E293B;
+}
+
+.seccion-titulo {
+    font-size: 4rem;
+    padding: 15px 0;
+    font-family: 'Ga Maamli', arial;
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+}
+
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+.badge {
+    background: linear-gradient(45deg, #6a5acd, #00bfff);
+    color: white;
+    font-weight: bold;
+}
+
+
+/* ----------- menú de navegación ------------------ */
+.navbar {
+    padding: 2rem;
+    background-color: #1E293B;
+
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: white;
+}
+
+.navbar-nav:hover .nav-link.active:hover, .navbar-nav:hover .nav-link.show:hover {
+    background-color: #374151; 
+    border-radius: 10%;
+    border: 2px solid #FFFFF0;
+    color: #FFFFF0;
+}
+
+
+.navbar-nav .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* ------------ sección principal -------------------- */
+
+.hero {
+    background-color: #1E293B;
+    min-height: 450px;
+    text-align: center;
+}
+.hero-principal {
+    padding: 3rem;
+}
+ 
+.hero-imagen-desarrollador {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.hero-principal h2 {
+    font-size: 1.5rem;
+    color: #615151;
+}
+
+
+ /* ---------- sobre mí ------------------ */
+
+.sobre-mi {
+    height: 500px;
+    padding: 10px;
+}
+ 
+.sobre-mi .contenedor {
+    max-width: 600px;
+    text-align: center;
+}
+
+/* --------------- proyectos recientes -------------------- */
+
+.proyectos-recientes {
+    padding: 40px;
+}
+
+.proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    display: block;
+    transition: all 0.2 ease;
+}
+
+.iconos-contenedor {
+    padding: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay {
+    padding-top: 100px;
+    transition: all 0.2 ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto {
+    position: relative;
+}
+
+.proyecto:hover img {
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+    display: flex;
+}
+
+.overlay i {
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+
+/* --------------- experiencia -------------------- */
+
+.experiencia {
+    padding: 40px 40px 60px 40px;
+}
+
+.experiencia .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+    color: #FFFFF0;
+    background-color: #800020;
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    color: #0e8f849f;
+    background-color: #0a0a23;
+    padding: 8px, 19px;
+    border-radius: 50%;
+    width: 50px;
+}
+
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge {
+    margin: 5px;
+}
+
+/* --------------- testimonios -------------------- */
+
+.testimonios {
+    padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel {
+    max-width: 800px;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonio-imagen {
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.testimonio-info {
+    font-weight: bold;
+    text-align: center;
+}
+
+.testimonio-info p {
+    margin-bottom: 0;
+}
+
+.testimonio-footer .cliente {
+    font-size: 1.2rem;
+}
+
+.testimonio-info .cargo {
+    font-size: 0.9rem;
+    color: #656060;
+}
+
+/* --------------- contacto -------------------- */
+.contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo {
+    margin-top: -5rem;
+    background-color: rgb(13, 110, 253);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px;
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion {
+    color: white;
+    font-size: 1.2rem;   
+}
+
+.contacto button {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2 ease;
+}
+
+.contacto button:hover {
+    background-color: white;
+    color: black;
+}
+
+.contacto button i {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+    color: black;
+}
+
+/* footer */
+
+.footer-texto {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.bi-code {
+    font-size: 100px; 
+    line-height: 1; 
+    margin-bottom: 40px;
+}
+
+.borde-icono {
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center;
+    border: 3px solid white;
+    border-radius: 50%;
+    width: auto;
+    height: auto; 
+    padding: 10px; 
+}
+
+.borde-icono:hover {
+    background-color: white;
+}
+
+.icono-grande {
+    font-size: 100px; 
+    line-height: 1; 
+    margin-bottom: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.iconos {
+    font-size: 25px;
+    display: flex; 
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.iconos a {
+    text-decoration: none; 
+    color: white;
+}
+
+.iconos a:hover {
+    color: black;
+}
+
+.copy {
+    padding-top: 10px;
+    color: gray;
+    font-size: 15px;
+    font-style: italic;
+}
+
+/* consultas para la responsividad */
+@media screen and (max-width: 767px) {
+    .navbar-brand img {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .hero-inferior-imagen {
+        max-width: 650px;
+    }
+}
